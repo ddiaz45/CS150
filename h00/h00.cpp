@@ -19,7 +19,8 @@ int run()
     // Add your implementation comments here
 
     // Write your code here
-
+    cout << STUDENT << ASSIGNMENT << endl;
+    cout << "[1, 1]" << endl;
     return 0;
 }
 
