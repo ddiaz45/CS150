@@ -29,6 +29,14 @@ int run()
     cout << "Duration: ";
     cin >> durationHours >> discard >> durationMinutes;
 
+    //int time, duration;
+    //turn everything into minutes
+
+    double thetime = (timeHours * 60) + timeMinutes;
+    double duration = (durationHours * 60) + durationMinutes;
+
+
+
     //the processing portion
     //need four different variables for the different inputs
     //int sumHours, sumMinutes, diffHours, diffMinutes;
