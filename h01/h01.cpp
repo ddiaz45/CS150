@@ -50,7 +50,7 @@ int run()
     int beforeMinutes = beforetotal % 60;
     cout << endl;
     cout << durationHours << ":" << durationMinutes <<
-            "hours after and before" << timeHours << ":" << timeMinutes <<
+            "hours after and before" << timeHours % 12 << ":" << timeMinutes <<
             "is [" << afterHours << ":" << afterMinutes << "," <<
             beforeHours <<":"<< beforeMinutes << "]" << endl;
 
