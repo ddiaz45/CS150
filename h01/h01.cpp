@@ -43,8 +43,7 @@ int run()
     double beforetotal = thetime - duration;
 
     //these are the variables converting everything into hours and minutes
-    cout << aftertotal << endl;
-    cout << beforetotal << endl;
+    cout.put(aftertotal);
 
 
     //the processing portion
