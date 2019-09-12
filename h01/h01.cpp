@@ -1,6 +1,6 @@
 /**
- *  @author Put your name here
- *  @date Put the date here
+ *  @author Diego Diaz
+ *  @date 09/05/2019
  *  @file h01.cpp
  */
 #include <iostream>
@@ -18,7 +18,21 @@ extern string ASSIGNMENT;
  */
 int run()
 {
-    // Add your implementation comments here
+    //  1. Title and Introduction
+  
+     // 2. Input Line: prompt and input on same line
+     cout << "  Time:";
+     cin >> timeHours;
+     cin >> timeMinutes
+     
+     cout << "  Duration:";
+     cin >> durationHours;
+     cin >> durationMinutes;
+     // 3. Processing section - Compute the results
+  // blank line
+     // 4. Output section: test data inside brackets [ ]
+
+     return 0;
 
     // Write your code here
 
