@@ -49,6 +49,7 @@ int run()
     int beforeHours = beforetotal / 60 % 12;
     int beforeMinutes = beforetotal % 60;
     cout << endl;
+    cout<< setfill('0');
     cout << durationHours << ":" << setw(2) << durationMinutes <<
             "hours after and before "
             << timeHours  << ":" << setw(2) << timeMinutes <<
