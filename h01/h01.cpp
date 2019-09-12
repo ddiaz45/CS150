@@ -34,16 +34,30 @@ int run()
     //need the four different variables for different inputs
 
     //these are the variables converting everything to minutes
-    double thetime = (timeHours * 60) + timeMinutes;
-    double duration = (durationHours * 60) + durationMinutes;
+    int thetime = (timeHours * 60) + timeMinutes;
+    int duration = (durationHours * 60) + durationMinutes;
 
     //making the total after and before time(still in minutes)
-    double aftertotal = thetime + duration;
+    int aftertotal = thetime + duration;
 
-    double beforetotal = thetime - duration;
+    int beforetotal = thetime - duration;
 
     //these are the variables converting everything into hours and minutes
-    cout.put(aftertotal);
+    int afterHours = aftertotal / 60;
+    int  afterMinutes = (aftertotal % 60);
+
+    int beforeHours = beforetotal / 60;
+    int beforeMinutes = beforetotal % 60;
+    cout << endl;
+    cout << durationHours << ":" << durationMinutes <<
+            "hours after and before" << timeHours << ":" << timeMinutes <<
+            "is [" << afterHours << ":" << afterMinutes << "," <<
+            beforeHours <<":"<< beforeMinutes << "]" << endl;
+
+    //outputformatting
+    cout << setfill('0');
+   // cout << setw(2) << after / 60 << ":" << setw(2) << after % 60;
+
 
 
     //the processing portion
