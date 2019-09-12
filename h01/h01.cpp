@@ -43,10 +43,10 @@ int run()
     int beforetotal = thetime - duration;
 
     //these are the variables converting everything into hours and minutes
-    int afterHours = aftertotal / 60 %12;
+    int afterHours = aftertotal / 60 % 12;
     int  afterMinutes = (aftertotal % 60);
 
-    int beforeHours = beforetotal / 60 %12;
+    int beforeHours = beforetotal / 60 % 12;
     int beforeMinutes = beforetotal % 60;
     cout << endl;
     cout << durationHours << ":" << setw(2) << durationMinutes <<
