@@ -31,9 +31,19 @@ int run()
 
     //int time, duration;
     //turn everything into minutes
+    //need the four different variables for different inputs
 
+    //these are the variables converting everything to minutes
     double thetime = (timeHours * 60) + timeMinutes;
     double duration = (durationHours * 60) + durationMinutes;
+
+    //making the total after and before time(still in minutes)
+    double aftertotal = thetime + duration;
+
+    double beforetotal = thetime - duration;
+
+    //these are the variables converting everything into hours and minutes
+
 
 
 
