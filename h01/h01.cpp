@@ -29,7 +29,28 @@ int run()
     cout << "Duration: ";
     cin >> durationHours >> discard >> durationMinutes;
 
+    //the processing portion
+    //need four different variables for the different inputs
+    //int sumHours, sumMinutes, diffHours, diffMinutes;
 
+/*
+    time = timeHours * 60 + timeMinutes;
+    duration = durationHours * 60 + durationMinutes;
+
+
+    after = time + duration;
+    before = time - duration;
+
+    afterHours = after /60;
+    afterMinutes = after % 60;
+
+    beforeHours = before/ 60;
+    beforeMinutes = before % 60;
+
+
+    cout >> "hello">>endl;
+*/
+/*
     // Write your code here
 
     int time = timeHours * 60 + timeMinutes;
@@ -51,7 +72,7 @@ int run()
         << timeHours << ":" << timeMinutes << "is [" << afterhours << ":" << afterminutes << ", "
         << beforehours << ":" << beforeminutes << "]" << endl;
 
-
+*/
 
 
     return 0;
