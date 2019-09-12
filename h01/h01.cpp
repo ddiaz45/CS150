@@ -52,7 +52,7 @@ int run()
     cout << durationHours << ":" << durationMinutes <<
             "hours after and before" << timeHours % 12 << ":" << timeMinutes <<
             "is [" << afterHours << ":" << afterMinutes << "," <<
-            beforeHours <<":"<< beforeMinutes << "]" << endl;
+            beforeHours % 12 <<":"<< beforeMinutes << "]" << endl;
 
     //outputformatting
     cout << setfill('0');
