@@ -34,8 +34,8 @@ int run()
     //need the four different variables for different inputs
 
     //these are the variables converting everything to minutes
-    int thetime = (timeHours * 60) + timeMinutes;
-    int duration = (durationHours * 60) + durationMinutes;
+    int thetime = (timeHours * 60 % 12) + timeMinutes;
+    int duration = (durationHours * 60 % 12) + durationMinutes;
 
     //making the total after and before time(still in minutes)
     int aftertotal = thetime + duration;
@@ -57,57 +57,6 @@ int run()
             << afterHours << ":" << setw(2) << afterMinutes << "," <<
             beforeHours  <<":"<< setw(2) << beforeMinutes << "]"
             << endl;
-
-    //outputformatting
-    //cout << setfill('0');
-   // cout << setw(2) << after / 60 << ":" << setw(2) << after % 60;
-
-
-
-    //the processing portion
-    //need four different variables for the different inputs
-    //int sumHours, sumMinutes, diffHours, diffMinutes;
-
-/*
-    time = timeHours * 60 + timeMinutes;
-    duration = durationHours * 60 + durationMinutes;
-
-
-    after = time + duration;
-    before = time - duration;
-
-    afterHours = after /60;
-    afterMinutes = after % 60;
-
-    beforeHours = before/ 60;
-    beforeMinutes = before % 60;
-
-
-    cout >> "hello">>endl;
-*/
-/*
-    // Write your code here
-
-    int time = timeHours * 60 + timeMinutes;
-    int duration = durationHours * 60 + durationMinutes;
-
-    int timeafter = time + duration;
-    int timebefore = time - duration;
-
-    int afterhours = timeafter / 60;
-    int afterminutes = timeafter % 60;
-    int beforehours = timebefore / 60;
-    int beforeminutes = timebefore % 60;
-        if(beforehours == 0)
-        {
-            beforehours += 12;
-        }
-    cout << endl;
-    cout << durationHours << ":" << durationMinutes << "hours after, and before, "
-        << timeHours << ":" << timeMinutes << "is [" << afterhours << ":" << afterminutes << ", "
-        << beforehours << ":" << beforeminutes << "]" << endl;
-
-*/
 
 
     return 0;
