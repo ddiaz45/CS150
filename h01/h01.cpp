@@ -40,13 +40,13 @@ int run()
     //making the total after and before time(still in minutes)
     int aftertotal = thetime + duration;
 
-    int beforetotal = thetime - duration;
+    int beforetotal = thetime + 24 - duration;
 
     //these are the variables converting everything into hours and minutes
     int afterHours = aftertotal / 60 % 12;
     int  afterMinutes = (aftertotal % 60);
 
-    int beforeHours = beforetotal / 60 % 12 + 24;
+    int beforeHours = beforetotal / 60 % 12;
     int beforeMinutes = beforetotal % 60;
     //cout << endl;
     cout<< setfill('0');
