@@ -19,8 +19,20 @@ int run()
     // Add your implementation comments here
 
     // Write your code here
-    cout << STUDENT << ASSIGNMENT << endl;
-    cout << "[1, 1]" << endl;
+    cout << STUDENT << '-'<<  ASSIGNMENT << ":";
+    cout << "Cereal Box Calculator"<< endl;
+    cout << string(50, '-')<< endl;
+    //this is the input section of the code
+    cout << "Enter ounces per box of cereal: ";
+    double ouncesPerBox;
+    cin >> ouncesPerBox;
+    // processing section
+    double weightInTons = ouncesPerBox/ 35273.92;
+    double boxesPerTon = 1.0/weightInTons;
+
+    cout << "weight in metric tons, boxes per ton: "
+        << weightInTons << "," << boxesPerTon << "" << endl;
+
     return 0;
 }
 
