@@ -40,7 +40,7 @@ int run()
     //making the total after and before time(still in minutes)
     int aftertotal = thetime + duration;
 
-    int beforetotal = thetime - duration + 72;
+    int beforetotal = thetime - duration + 48;
 
     //these are the variables converting everything into hours and minutes
     int afterHours = aftertotal / 60 % 12;
