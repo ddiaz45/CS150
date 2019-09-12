@@ -34,13 +34,13 @@ int run()
     //need the four different variables for different inputs
 
     //these are the variables converting everything to minutes
-    int thetime = (timeHours * 60 % 12) + timeMinutes;
-    int duration = (durationHours * 60 % 12) + durationMinutes;
+    int thetime = (timeHours * 60) + timeMinutes;
+    int duration = (durationHours * 60) + durationMinutes;
 
     //making the total after and before time(still in minutes)
     int aftertotal = thetime + duration;
 
-    int beforetotal = thetime - duration;
+    int beforetotal = thetime - duration + 24;
 
     //these are the variables converting everything into hours and minutes
     int afterHours = aftertotal / 60 % 12;
