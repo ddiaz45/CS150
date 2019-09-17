@@ -38,15 +38,16 @@ string toFrenchGender(const string& country)
         prefix = "les ";
     }
 
-    else if (first == "A" || first == "E" || first == "I" || first == "O" || first == "U")
-    {
-        prefix = "l' ";
-    }
 
     else if (last == "e" || last == "o")
     {
         prefix = "La ";
     }
+
+//    else if (first == "A" || first == "E" || first == "I" || first == "O" || first == "U")
+  //  {
+      //  prefix = "l' ";
+    //}
     else
     {
         prefix = "Le ";
