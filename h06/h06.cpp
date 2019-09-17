@@ -15,7 +15,7 @@ string toFrenchGender(const string& country)
 {
     //result is initialized
     string result;
-    string prefix, plain, masculine;
+    string prefix, masculine, plain;
     //result is given a value
     result = "who knows";
     //returns the variable
@@ -28,7 +28,7 @@ string toFrenchGender(const string& country)
     string first = country.substr(0,1); //this grabs the first character
 
     if (masculine == "Belize" || masculine == "Cambodge" || masculine == "Honduras" || masculine == "Mexique" ||
-        masculine == "Mozambique" || masculine == "Costa Rica" || masculine == "Zimbabwe" ||
+        masculine == "Mozambique" || masculine == " Costa Rica" || masculine == "Zimbabwe" ||
         masculine == "Canada" || masculine == "Venezuela" || masculine == "Luxembourg" ||
         masculine == "Guatamala" || masculine == "Bresil" || masculine == "Portugal")
     {
@@ -52,7 +52,7 @@ string toFrenchGender(const string& country)
         prefix = "l'";
     }
 
-    else if (last == "e" || last == "o")
+    else if(last == "e" || last == "o")
     {
         prefix = "la ";
     }
