@@ -23,10 +23,9 @@ string toFrenchGender(const string& country)
     //STEP 2
     string islands = "iles";
     string vowels = "AEIOU"; //variable set that only cares about first letter
-    string first = country.substr(0,1); //this grabs the first character
     string end = country.substr(country.size() - 2); // last two character
     string last =  country.substr(country.size() - 1); //last character
-
+    string first = country.substr(0,1); //this grabs the first character
 
     if (masculine == "Belize" || masculine == "Cambodge" || masculine == "Honduras" || masculine == "Mexique" ||
         masculine == "Mozambique" || masculine == "Costa Rica" || masculine == "Zimbabwe" ||
