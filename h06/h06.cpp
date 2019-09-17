@@ -20,6 +20,23 @@ string toFrenchGender(const string& country)
     result = "who knows";
     //returns the variable
 
+    //STEP 2
+    string islands = "iles";
+    string last =  country.substr(country.size()-1); //last character
+    string end = country.substr(country.size()-2); // last two character
+
+
+    //if any are true then set prefix to "les"
+        //country starts with value in islands
+        //last is one of "es", 'is', 'os', 'as'
+
+    if (country.substr(0,4) == islands || end == "es" || end == "is" ||
+        end == "os" || end == "as")
+    {
+        prefix == "les";
+    }
+
+
     //country end in letter e or o? -feminine prefix -> la
     //otherwise- masculine prefix -> le
     //the exceptions
