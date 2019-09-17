@@ -45,7 +45,7 @@ string toFrenchGender(const string& country)
         prefix = "l'";
     }
 
-    //if the last letter is one of these then return La
+
     else if (last == "e" || last == "o")
     {
         prefix = "la ";
