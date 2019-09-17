@@ -1,0 +1,25 @@
+TESTING H06--Diego Diaz
+----------------------------------------------------------------------
+Checking function: toFrenchGender("country") -------------------
+   + toFrenchGender("Etats-Unis")->les Etats-Unis
+   + toFrenchGender("Allemagne")->l'Allemagne
+   + toFrenchGender("Bahamas")->les Bahamas
+   + toFrenchGender("iles Malouines")->les iles Malouines
+   + toFrenchGender("Slovenie")->la Slovenie
+   + toFrenchGender("Croatie")->la Croatie
+   X toFrenchGender("Cyprus"): expected [Cyprus] but found [le Cyprus]
+   + toFrenchGender("Danemark")->le Danemark
+   + toFrenchGender("iles Salomon")->les iles Salomon
+   + toFrenchGender("Liechtenstein")->le Liechtenstein
+   + toFrenchGender("Espagne")->l'Espagne
+   + toFrenchGender("Bresil")->le Bresil
+   X toFrenchGender("Mexique"): expected [le Mexique] but found [la Mexique]
+   + toFrenchGender("Barbade")->la Barbade
+   X toFrenchGender("Cuba"): expected [Cuba] but found [le Cuba]
+----------------------------------------------------------------------
+  Tests passing 12/15 (80%).
+
+----------------------------------------------------------------------
+H06:Diego Diaz:ALL TESTS -- PASS 12/15 (80%).
+----------------------------------------------------------------------
+MTU2ODcxODc0OTpEaWVnbyBEaWF6OkgwNjo4MC4wMCU=
