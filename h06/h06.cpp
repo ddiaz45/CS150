@@ -22,10 +22,10 @@ string toFrenchGender(const string& country)
 
     //STEP 2
     string islands = "iles";
-    string vowels = "AEIOU";
+    string vowels = "AEIOU"; //variable set that only cares about first letter
     string last =  country.substr(country.size()-1); //last character
     string end = country.substr(country.size()-2); // last two character
-    string first = country.substr(0,1); //this grabs the first character
+    //string thevowels = country.substr(0,1); //this grabs the first character
 
 
     //if any are true then set prefix to "les"
@@ -37,7 +37,7 @@ string toFrenchGender(const string& country)
     {
         prefix = "les ";
     }
-    else if (vowels == "A" || vowels == "E" || vowels == "I"|| vowels == "O" || vowels == "U" )
+    else if (country.substr(0,1) == vowels || vowels == "A" || vowels == "E" || vowels == "I"|| vowels == "O" || vowels == "U" )
     {
         prefix = "l' ";
     }
