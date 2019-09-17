@@ -31,11 +31,6 @@ string toFrenchGender(const string& country)
 
 
 
-
-    //if any are true then set prefix to "les"
-        //country starts with value in islands
-        //last is one of "es", 'is', 'os', 'as'
-
     if (masculine == "Belize" || masculine == "Cambodge" || masculine == "Honduras" || masculine == "Mexique" ||
         masculine == "Mozambique" || masculine == "Costa Rica" || masculine == "Zimbabwe" )
     {
