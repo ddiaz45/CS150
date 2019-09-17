@@ -60,7 +60,7 @@ string toFrenchGender(const string& country)
 
     else
     {
-        prefix == "le ";
+        prefix = "le ";
     }
 
     result = prefix + country;
