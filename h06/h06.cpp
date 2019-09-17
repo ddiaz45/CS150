@@ -33,7 +33,7 @@ string toFrenchGender(const string& country)
     if (country.substr(0,4) == islands || end == "es" || end == "is" ||
         end == "os" || end == "as")
     {
-        prefix = "les";
+        prefix = "les ";
 
     }
 
