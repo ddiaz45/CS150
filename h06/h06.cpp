@@ -37,8 +37,8 @@ string toFrenchGender(const string& country)
     {
         prefix = "les ";
     }
-    //else if (country.substr(0,1) == vowels || vowels == "A" || vowels == "E" || vowels == "I"|| vowels == "O" || vowels == "U" )
-    else if (vowels.find(first,1))
+
+    else if (first == "A" || first == "E" || first == "I" || first == "O" || first == "U")
     {
         prefix = "l' ";
     }
