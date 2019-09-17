@@ -15,9 +15,7 @@ string toFrenchGender(const string& country)
 {
     //result is initialized
     string result;
-    string prefix;
-    string plain;
-    string masculine;
+    string prefix, plain, masculine;
     //result is given a value
     result = "who knows";
     //returns the variable
