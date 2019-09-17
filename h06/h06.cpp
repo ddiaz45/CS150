@@ -38,9 +38,9 @@ string toFrenchGender(const string& country)
         prefix = "les ";
     }
 
-    else if (size_t found = first.find(vowels))
+    else if (size_t found = vowels.find(first))
     {
-        prefix = "l' ";
+        prefix = "l'";
     }
 
     //if the last letter is one of these then return La
