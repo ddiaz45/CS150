@@ -48,7 +48,7 @@ string toFrenchGender(const string& country)
         prefix = "les ";
     }
 
-    else if (size_t found = first.find(vowels))
+    else if (size_t found = vowels.find(first))
     {
         prefix = "l'";
     }
@@ -69,6 +69,5 @@ string toFrenchGender(const string& country)
 /////////////// Optional Student Code /////////////////
 int run()
 {
-
     return 0;
 }
