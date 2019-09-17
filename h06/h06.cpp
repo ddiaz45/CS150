@@ -30,7 +30,6 @@ string toFrenchGender(const string& country)
     string last =  country.substr(country.size() - 1); //last character
 
 
-
     if (masculine == "Belize" || masculine == "Cambodge" || masculine == "Honduras" || masculine == "Mexique" ||
         masculine == "Mozambique" || masculine == "Costa Rica" || masculine == "Zimbabwe" )
     {
@@ -54,7 +53,6 @@ string toFrenchGender(const string& country)
         prefix = "l'";
     }
 
-
     else if (last == "e" || last == "o")
     {
         prefix = "la ";
@@ -65,14 +63,9 @@ string toFrenchGender(const string& country)
         prefix == "le ";
     }
 
-
-    //then make result add prefix and country
     result = prefix + country;
     return result;
 }
-
-
-
 /////////////// Optional Student Code /////////////////
 int run()
 {
