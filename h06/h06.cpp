@@ -41,10 +41,10 @@ string toFrenchGender(const string& country)
     {
         prefix = "La ";
     }
-    else
-    {
-        prefix = "Le ";
-    }
+    //else
+    //{
+    //    prefix = "Le ";
+    //}
 
 
     //country end in letter e or o? -feminine prefix -> la
