@@ -30,9 +30,9 @@ string toFrenchGender(const string& country)
 
     if (masculine == "Belize" || masculine == "Cambodge" || masculine == "Honduras" || masculine == "Mexique" ||
         masculine == "Mozambique" || masculine == "Costa Rica" || masculine == "Zimbabwe" ||
-        masculine == "Canada" || masculine == "Venezuela")
+        masculine == "Canada" || masculine == "Venezuela" )
     {
-        prefix = "le ";
+        prefix == "le ";
     }
 
     else if (plain == "Israel" || plain == "Madagascar" || plain == "Sri Lanka" ||
