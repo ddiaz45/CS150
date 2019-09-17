@@ -1,0 +1,26 @@
+TESTING H07--ddiaz45
+----------------------------------------------------------------------
+Checking function: sumNums("str") -------------------
+   + sumNums("we69a9es6l449")->533
+   + sumNums("9l65847y44")->65900
+   + sumNums("Chocolate")->0
+   + sumNums("71f1mlz4247wb")->4319
+   X sumNums("")
+   + sumNums("abc123xyz")->123
+   + sumNums("32rj05xorky3")->40
+   + sumNums("i3i110h9")->122
+   + sumNums("3mqw7n81469")->81479
+   + sumNums("fpl")->0
+   + sumNums("wb4x")->4
+   + sumNums("2xz86vr013h2s78c6j")->187
+   + sumNums("69p2798")->2867
+   + sumNums("aa11b33")->44
+   + sumNums("4p")->4
+   + sumNums("9wz1d73277r8047")->81334
+----------------------------------------------------------------------
+  Tests passing 15/16 (94%).
+
+----------------------------------------------------------------------
+H07:ddiaz45:ALL TESTS -- PASS 15/16 (94%).
+----------------------------------------------------------------------
+MTU2ODc1NzU1MTpkZGlhejQ1OkgwNzo5My43NSU=
