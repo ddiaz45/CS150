@@ -15,7 +15,7 @@ string toFrenchGender(const string& country)
 {
     //result is initialized
     string result;
-    string prefix, masculine, plain;
+    string prefix, plain, masculine;
     //result is given a value
     result = "who knows";
     //returns the variable
@@ -38,7 +38,7 @@ string toFrenchGender(const string& country)
     else if (plain == "Israel" || plain == "Madagascar" || plain == "Sri Lanka" ||
              plain == "Singapore" || plain == "Monaco" || plain == "Cuba" || plain == "Cyprus")
     {
-        prefix = " ";
+        prefix = "";
     }
 
     else if (country.substr(0,4) == islands || end == "es" || end == "is" ||
