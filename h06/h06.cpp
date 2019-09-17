@@ -39,7 +39,7 @@ string toFrenchGender(const string& country)
     else if (plain == "Israel" || plain == "Madagascar" || plain == "Sri Lanka" ||
              plain == "Singapore" || plain == "Monaco" || plain == "Cuba" || plain == "Cyprus")
     {
-        prefix = " ";
+        prefix = "";
     }
 
     else if (country.substr(0,4) == islands || end == "es" || end == "is" ||
