@@ -24,8 +24,8 @@ string toFrenchGender(const string& country)
     string islands = "iles";
     string vowels = "AEIOU"; //variable set that only cares about first letter
     string first = country.substr(0,1); //this grabs the first character
-    string end = country.substr(country.size()-2); // last two character
-    string last =  country.substr(country.size()-1); //last character
+    string end = country.substr(country.size() - 2); // last two character
+    string last =  country.substr(country.size() - 1); //last character
 
 
 
