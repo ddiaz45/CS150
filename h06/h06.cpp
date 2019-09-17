@@ -39,19 +39,6 @@ string toFrenchGender(const string& country)
     }
 
 
-//    else if (last == "e" || last == "o")
-  //  {
-    //    prefix = "La ";
-//    }
-
-//    else if (first == "A" || first == "E" || first == "I" || first == "O" || first == "U")
-  //  {
-      //  prefix = "l' ";
-    //}
-  //  else
-    //{
-      //  prefix = "Le ";
-    //}
 
 
     //country end in letter e or o? -feminine prefix -> la
