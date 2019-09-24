@@ -53,12 +53,12 @@ int countCode(const string& str)
 }
 string everyNth(const string& str, int n)
 {
-    string resultNth;
+    string result;
     for (int i = 0; i < n; i++)
     {
-        resultNth += i;
+        result += n;
     }
-    return resultNth;
+    return result;
 }
 bool prefixAgain(const string& str, int n)
 {
