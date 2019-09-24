@@ -15,6 +15,28 @@ string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
 string zipZap(const string& str)
 {
     string result;
+    int len = str.size();
+    int i = 0;
+    if (len < 3)
+    {
+        return str;
+    }
+    while (i < len)
+    {
+        string word = str.substr(i, 3);
+        string front = word.substr(0,1);
+        string back = word.substr(2);
+        if (front == "z" && back == "p")
+        {
+            result += "zp";
+            i += 3;
+        }
+        else
+        {
+            result += word.at(0);
+            i++;
+        }
+    }
     return result;
 }
 int countCode(const string& str)
