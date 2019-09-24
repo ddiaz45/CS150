@@ -56,7 +56,7 @@ string everyNth(const string& str, int n)
     string resultNth;
     for (int i = 0; i < n; i++)
     {
-        resultNth += n;
+        resultNth += i;
     }
     return resultNth;
 }
