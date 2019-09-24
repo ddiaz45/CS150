@@ -21,7 +21,7 @@ string zipZap(const string& str)
     {
         return str;
     }
-    while (i < len)
+    while (i < len - 2)
     {
         string word = str.substr(i, 3);
         string front = word.substr(0,1);
