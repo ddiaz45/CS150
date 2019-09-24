@@ -20,7 +20,7 @@ string zipZap(const string& str)
 int countCode(const string& str)
 {
     int result = 0;
-    for (size_t i = 4, len = str.size(); i <= len- 3; i++)
+    for (size_t i = 4, len = str.size(); i <= len ; i++)
     {
         string word = str.substr(i - 4, 4);
         string front = word.substr(0,2);
