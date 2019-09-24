@@ -36,7 +36,17 @@ string everyNth(const string& str, int n)
 }
 bool prefixAgain(const string& str, int n)
 {
-    return str.substr(1).find(str.substr(0,n)) != string::npos;
+    string prefix = str.substr(0,n);
+    for (int i = 1, len = str.size() - n; i <= len; i++)
+    {
+        string word = str.substr(i, n);
+        if (word == prefix)
+        {
+            return true;
+        }
+    }
+    return false;
+
 }
 ////////////////// STUDENT TESTING /////////////
 int run()
