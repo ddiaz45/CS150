@@ -1,0 +1,67 @@
+TESTING H08--WHO AM I?
+----------------------------------------------------------------------
+Checking function: everyNth -------------------
+   X everyNth("Miracle", 2): expected [Mrce] but found []
+   X everyNth("abcdefg", 3): expected [adg] but found []
+   X everyNth("abcdefg", 2): expected [aceg] but found []
+   X everyNth("Chocolate", 3): expected [Cca] but found []
+   X everyNth("Chocolates", 3): expected [Ccas] but found []
+   X everyNth("Chocolates", 4): expected [Coe] but found []
+   X everyNth("Chocolates", 100): expected [C] but found [dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd]
+----------------------------------------------------------------------
+  Tests passing 0/7 (0%).
+
+Checking function: zipZap -------------------
+   + zipZap("zipXzap")->zpXzp
+   + zipZap("zopzop")->zpzp
+   + zipZap("zzzopzop")->zzzpzp
+   + zipZap("zibzap")->zibzp
+   + zipZap("zip")->zp
+   + zipZap("zi")->zi
+   + zipZap("z")->z
+   + zipZap("")->
+   + zipZap("zzp")->zp
+   X zipZap("abcppp"): expected [abcppp] but found [abcp]
+   X zipZap("azbcppp"): expected [azbcppp] but found [azbcp]
+   + zipZap("azbcpzpp")->azbcpzp
+----------------------------------------------------------------------
+  Tests passing 10/12 (83%).
+
+Checking function: countCode -------------------
+   + countCode("aaacodebbb")->1
+   + countCode("codexxcode")->2
+   + countCode("cozexxcope")->2
+   + countCode("cozfxxcope")->1
+   + countCode("xxcozeyycop")->1
+   + countCode("cozcop")->0
+   + countCode("abcxyz")->0
+   + countCode("code")->1
+   + countCode("ode")->0
+   + countCode("c")->0
+   + countCode("")->0
+   + countCode("AAcodeBBcoleCCccoreDD")->3
+   + countCode("AAcodeBBcoleCCccorfDD")->2
+   + countCode("coAcodeBcoleccoreDD")->3
+----------------------------------------------------------------------
+  Tests passing 14/14 (100%).
+
+Checking function: prefixAgain -------------------
+   + prefixAgain("abXYabc", 1)
+   + prefixAgain("abXYabc", 2)
+   + prefixAgain("abXYabc", 3)
+   + prefixAgain("xyzxyxyxy", 2)
+   + prefixAgain("xyzxyxyxy", 3)
+   + prefixAgain("Hi12345Hi6789Hi10", 1)
+   + prefixAgain("Hi12345Hi6789Hi10", 2)
+   + prefixAgain("Hi12345Hi6789Hi10", 3)
+   + prefixAgain("Hi12345Hi6789Hi10", 4)
+   + prefixAgain("a", 1)
+   + prefixAgain("aa", 1)
+   + prefixAgain("ab", 1)
+----------------------------------------------------------------------
+  Tests passing 12/12 (100%).
+
+----------------------------------------------------------------------
+H08:WHO AM I?:ALL TESTS -- PASS 36/45 (80%).
+----------------------------------------------------------------------
+MTU2OTM0MDUyOTpXSE8gQU0gST86SDA4OjgwLjAwJQ==
