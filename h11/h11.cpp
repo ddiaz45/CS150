@@ -15,9 +15,9 @@ string STUDENT = "Diego Diaz"; // Add your Canvas/occ-email ID
 // Write your function here
 void strip()
 {
-    bool inSingleCmt = false;
-    bool inMultiCmt = false;
     bool inString = false;
+    bool inMultiCmt = false;
+    bool inSingleCmt = false;
     char ch;
     while (cin.get(ch))
     {
