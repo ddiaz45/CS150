@@ -25,6 +25,10 @@ void strip()
         {
             inSingleCmt = false;
         }
+        if (inSingleCmt && ch == '\n')
+        {
+            inSingleCmt = false;
+        }
         else if (inString && ch =='\\' && cin.peek() == '"')
         {
             inString = false;
@@ -36,11 +40,7 @@ void strip()
         }
         else if (!(inString) && !(inSingleCmt) && !(inMultiCmt))
         {
-            if (ch == '"')
-            {
-                inString = true;
-            }
-            else if (ch == '/' && cin.peek() == '*')
+            if (ch == '/' && cin.peek() == '*')
             {
                 inMultiCmt = true;
             }
@@ -48,11 +48,12 @@ void strip()
             {
                 inSingleCmt = true;
             }
+            else if (ch == '"')
+            {
+                inString = true;
+            }
         }
-        else if (inSingleCmt && ch == '\n')
-        {
-            inSingleCmt = false;
-        }
+
     }
 
 }
