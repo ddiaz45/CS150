@@ -21,11 +21,11 @@ void strip()
     char ch;
     while (cin.get(ch))
     {
-        if (cin.get(ch) && !inSingleCmt && !inMultiCmt)
+        if (inSingleCmt && ch == '\n')
         {
-            cout.put(ch);
+            inSingleCmt = false;
         }
-        else if (inString && ch =='\\' && ch == '"')
+        else if (inString && ch =='\\' && cin.peek() == '"')
         {
             inString = false;
         }
