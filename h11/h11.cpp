@@ -25,7 +25,7 @@ void strip()
         {
             inSingleCmt = false;
         }
-        else if (inString && ch == '"')
+        else if (inString && ch =='\\' && ch == '"')
         {
             inString = false;
         }
