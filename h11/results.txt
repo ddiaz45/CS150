@@ -1,0 +1,18 @@
+TESTING H11--Diego Diaz
+----------------------------------------------------------------------
+Checking function: Checking the strip function. -------------------
+   X Single line comment removed: Failed
+   + Comment embedded in string not removed: Success
+   X Strings in comments removed; newlines retained: Failed
+   + More string-embedded comments retained: Success
+   X Same-line paired comments removed: Failed
+   X Escaped quotes and comments in a string:: Failed
+   + More escaped quotes inside a string: Success
+   X Doxygen comments removed: Failed
+----------------------------------------------------------------------
+  Tests passing 3/8 (38%).
+
+----------------------------------------------------------------------
+H11:Diego Diaz:ALL TESTS -- PASS 3/8 (38%).
+----------------------------------------------------------------------
+MTU2OTk2MTM0ODpEaWVnbyBEaWF6OkgxMTozNy41MCU=
