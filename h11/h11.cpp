@@ -21,16 +21,19 @@ void strip()
     char ch;
     while (cin.get(ch))
     {
-        if (inSingleCmt && ch == '\n')
+        if (cin && inSingleCmt && inMultiCmt)
+        {
+            cout.put(ch);
+        }
+        if (inSingleCmt == true && ch == '\n')
         {
             inSingleCmt = false;
         }
-        else if (inString && ch =='\\' && cin.peek() == '"')
+        else if (inString == true && ch == '\"')
         {
-            cout.put(ch);
-            cin.get(ch);
+            inString = false;
         }
-        else if (inMultiCmt && ch == '*' && cin.peek() == '/')
+        else if (inMultiCmt == true && ch == '*' && cin.peek() == '/')
         {
             cin.get(ch);
             cin.get(ch);
@@ -39,7 +42,7 @@ void strip()
 
         else if (!(inString) && !(inSingleCmt) && !(inMultiCmt))
         {
-            if (ch == '"')
+            if (ch == '\"')
             {
                 inString = true;
             }
@@ -53,11 +56,12 @@ void strip()
             }
 
         }
-        if (cin.get(ch) && !inSingleCmt && !inMultiCmt)
+        else if (inString && ch == '\\' && cin.peek() == '"')
         {
             cout.put(ch);
             cin.get(ch);
         }
+        cout.put(ch);
     }
 
 }
