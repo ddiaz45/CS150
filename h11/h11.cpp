@@ -21,6 +21,7 @@ void strip()
     char ch;
     while (cin.get(ch))
     {
+
         if (inSingleCmt == true && ch == '\n')
         {
             inSingleCmt = false;
@@ -61,7 +62,6 @@ void strip()
         {
             cout.put(ch);
         }
-
     }
 
 }
