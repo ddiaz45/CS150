@@ -25,7 +25,7 @@ void strip()
         {
             inSingleCmt = false;
         }
-        if (inSingleCmt && ch == '\n')
+        else if (inSingleCmt && ch == '\n')
         {
             inSingleCmt = false;
         }
