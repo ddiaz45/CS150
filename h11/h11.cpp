@@ -49,7 +49,10 @@ void strip()
                 inSingleCmt = true;
             }
         }
-
+        if (cin.get(ch) && !inSingleCmt && !inMultiCmt)
+        {
+            cout.put(ch);
+        }
 
     }
 
