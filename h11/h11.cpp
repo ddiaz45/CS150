@@ -21,9 +21,9 @@ void strip()
     char ch;
     while (cin.get(ch))
     {
-        if (inSingleCmt && ch == '\n')
+        if (cin.get(ch) && !inSingleCmt && !inMultiCmt)
         {
-            inSingleCmt = false;
+            cout.put(ch);
         }
         else if (inString && ch =='\\' && ch == '"')
         {
@@ -50,11 +50,10 @@ void strip()
                 inSingleCmt = true;
             }
         }
-        if (cin.get(ch) && !inSingleCmt && !inMultiCmt)
+        if (inSingleCmt && ch == '\n')
         {
-            cout.put(ch);
+            inSingleCmt = false;
         }
-
     }
 
 }
