@@ -58,7 +58,10 @@ void strip()
             cout.put(ch);
             cin.get(ch);
         }
-
+        if (cin && inSingleCmt && inMultiCmt)
+        {
+            cout.put(ch);
+        }
     }
 
 }
