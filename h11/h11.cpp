@@ -36,27 +36,24 @@ void strip()
             cin.get(ch);
             inMultiCmt = false;
         }
-        else if (inSingleCmt && ch == '"')
-        {
-            inSingleCmt = false;
-        }
+
         else if (!(inString) && !(inSingleCmt) && !(inMultiCmt))
         {
             if (ch == '"')
             {
                 inString = true;
             }
-            if (ch == '/' && cin.peek() == '*')
+            else if (ch == '/' && cin.peek() == '*')
             {
                 inMultiCmt = true;
             }
-            if (ch == '/' && cin.peek() == '/')
+            else if (ch == '/' && cin.peek() == '/')
             {
                 inSingleCmt = true;
             }
 
         }
-        if (cin && inSingleCmt && inMultiCmt)
+        if (cin.get(ch) && !inSingleCmt && !inMultiCmt)
         {
             cout.put(ch);
         }
