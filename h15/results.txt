@@ -1,0 +1,29 @@
+TESTING H15--Diego Diaz
+----------------------------------------------------------------------
+Checking: Compiling under two different platforms. -------------------
+   + Compiles under C++ 98(10 pts)
+   + Compiles under C++ 17(10 pts)
+----------------------------------------------------------------------
+  Tests passing 20/20 (100%).
+
+Testing using C++98
+------------------------------------------
+Checking: to_string function -------------------
+   X to_string(42): expected [42] but found [42.000000]
+   + to_string(3.F)->"3.000000"
+   X to_string(-1U): expected [4294967295] but found [4294967296.000000]
+   X to_string(4L): expected [4] but found [4.000000]
+   X to_string('c'): expected [99] but found [99.000000]
+   + to_string(1.7L)->"1.700000"
+   + to_string(2.7e3)->"2700.000000"
+   + to_string(2.17e-4)->"0.000217"
+   + to_string(1.0/0.0)->"inf"
+   + to_string(-1.0/0.0)->"-inf"
+   + to_string(0.0/0.0)->"-nan"
+----------------------------------------------------------------------
+  Tests passing 7/11 (64%).
+
+----------------------------------------------------------------------
+H15:Diego Diaz:ALL TESTS -- PASS 27/31 (87%).
+----------------------------------------------------------------------
+MTU3MDU2NjU4MTpEaWVnbyBEaWF6OkgxNTo4Ny4xMCU=
