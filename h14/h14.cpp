@@ -14,9 +14,27 @@ string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
 #include "h14.h"
 
 // Define your functions here
+string getLine(const string& prompt)
+{
+    string result = "";
+    return result;
+}
 
-
-
+int getInt(const string& prompt)
+{
+    int result = 0;
+    return result;
+}
+double getReal(const string& prompt)
+{
+    double result = 0.0;
+    return result;
+}
+bool getYN(const string& prompt)
+{
+    bool result = false;
+    return result;
+}
 /////////////// STUDENT TESTING ////////////////////
 int run()
 {
