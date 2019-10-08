@@ -1,12 +1,16 @@
 /**
     @file h13.h
-    @author Your name
-    @data Semester and Section
+    @author Diego Diaz
+    @data F19 TTH6-8:30
 */
 #ifndef H13_H_
 #define H13_H_
 
 #include <string>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <iomanip>
 
 /**
  * Opens and processes the data sets in fileName.
