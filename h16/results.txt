@@ -1,0 +1,29 @@
+TESTING H16--Diego Diaz
+----------------------------------------------------------------------
+Checking function: Point Structure -------------------
+   + Get input for p1.x->5: Success
+   + Get input for p1.y->10: Success
+   + Get input for p2.x->7: Success
+   + Get input for p2.y->15: Success
+   + Print correctly displays p1->(5, 10): Success
+   + Print correctly displays p2->(7, 15): Success
+   X Check distance between p1 and p2: found->5.916080: Failed
+   + Check mid.x midpoint between p1 and p2->6: Success
+   + Check mid.y midpoint between p1 and p2->12: Success
+----------------------------------------------------------------------
+  Tests passing 8/9 (89%).
+
+Checking function: Triangle Structure -------------------
+   X Perimeter of Triangle((1,3), (-2,-2), (3,-1)): found->11.6025: Failed
+   X Perimeter of Triangle((2,3), (5,1), (5,5)): found->-nan: Failed
+   X Perimeter of Triangle((4,4), (3,5), (1,1)): found->9.1416: Failed
+   X Perimeter of Triangle((2,3), (2,2), (1,3)): found->1.0000: Failed
+   X Perimeter of Triangle((3,2), (2,5), (3,4)): found->4.4495: Failed
+   X Perimeter of Triangle((3,3), (2,2), (4,1)): found->-nan: Failed
+----------------------------------------------------------------------
+  Tests passing 0/6 (0%).
+
+----------------------------------------------------------------------
+H16:Diego Diaz:ALL TESTS -- PASS 8/15 (53%).
+----------------------------------------------------------------------
+MTU3MTE4NzI3ODpEaWVnbyBEaWF6OkgxNjo1My4zMyU=
