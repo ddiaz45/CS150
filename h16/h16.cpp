@@ -38,7 +38,7 @@ Point midpoint(const Point& a, const Point& b)
     Point mid;
     mid.x = ((a.x + b.x) / 2);
     mid.y = ((a.y + b.y) / 2);
-    return mid;
+    return Point{mid.x,mid.y};
 }
 
 double perimeter(const Triangle& t)
