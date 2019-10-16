@@ -27,9 +27,9 @@ void print( ostream& out, const Point& p)
 
 double distanceBetween(const Point& a, const Point& b)
 {
-    int distx = a.x - b.y;
+    int distx = a.x - b.x;
 
-    int disty = a.y - a.x;
+    int disty = a.y - b.y;
 
     return sqrt(distx * disty + disty * disty);
 }
