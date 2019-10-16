@@ -7,7 +7,7 @@
 #include <cmath>
 using namespace std;
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "Diego Diaz"; // Add your Canvas/occ-email ID
 
 #include "h16.h"
 // Add your implementation here
