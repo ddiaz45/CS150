@@ -46,7 +46,7 @@ double perimeter(const Triangle& t)
     double perimter = 0.0;
     perimter += distanceBetween(t.p1, t.p2);
     perimter += distanceBetween(t.p2, t.p3);
-    perimter += distanceBetween(t.p3, t.p1);
+    perimter += distanceBetween(t.p1, t.p3);
     return perimter;
 }
 /////////////// STUDENT TESTING ////////////////////
