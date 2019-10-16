@@ -41,7 +41,7 @@ Point midpoint(const Point& a, const Point& b)
     return mid;
 }
 
-double perimeter(const Triangle & t)
+double perimeter(const Triangle& t)
 {
     double perimter = 0.0;
     perimter += distanceBetween(t.p1, t.p2);
